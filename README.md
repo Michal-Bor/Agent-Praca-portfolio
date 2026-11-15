@@ -1,5 +1,7 @@
 # Agent Praca — portfolio
 
+[Otwórz demo](https://agent-praca-michal-bor.streamlit.app/) · [Poradnik](PORADNIK.md) · [Testy](https://github.com/Michal-Bor/Agent-Praca-portfolio/actions)
+
 Interaktywny pokaz asystenta poszukiwania pracy. Porównaj fikcyjne oferty, sprawdź przykładowe dopasowanie, popraw dokumenty i zapisz etap rekrutacji.
 
 **Dane są fikcyjne; oceny i szkice przygotowano wcześniej. Demo nie uruchamia AI.**
