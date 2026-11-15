@@ -1,0 +1,66 @@
+# Wygląd aplikacji „Agent pracy”. Jasny i ciemny wariant przełączasz w menu ⋮ → Settings (domyślnie jak w systemie).
+# Akcent: spokojny jadeit. Kontrast wg WCAG: tekst na tle > 12:1; jasny motyw: biały napis na przycisku 6,4:1.
+
+[browser]
+# Prywatna aplikacja – bez wysyłania statystyk użycia do Streamlit
+gatherUsageStats = false
+
+[client]
+# Bez opcji deweloperskich (np. „Deploy”), ale z menu Settings, w którym jest przełącznik jasny/ciemny
+toolbarMode = "viewer"
+
+[theme]
+# Wspólne dla obu wariantów. Czcionka wbudowana w Streamlit (pełne polskie znaki, bez pobierania z internetu).
+font = "sans-serif"
+baseFontSize = 16
+baseRadius = "0.6rem"
+buttonRadius = "0.6rem"
+showWidgetBorder = true
+showSidebarBorder = true
+linkUnderline = true
+headingFontSizes = ["2rem", "1.5rem", "1.25rem", "1.1rem", "1rem", "0.9rem"]
+headingFontWeights = [600, 600, 600, 600, 600, 600]
+metricValueFontSize = "1.6rem"
+metricValueFontWeight = 600
+paddingTop = "2.5rem"
+paddingBottom = "3rem"
+
+[theme.light]
+primaryColor = "#1D6A5E"
+backgroundColor = "#FAFBFA"
+secondaryBackgroundColor = "#EDF2F0"
+textColor = "#1E2A2F"
+borderColor = "#CFDAD6"
+linkColor = "#1D6A5E"
+codeBackgroundColor = "#EDF2F0"
+greenColor = "#1D6A5E"
+dataframeBorderColor = "#CFDAD6"
+
+[theme.light.sidebar]
+backgroundColor = "#F1F5F3"
+secondaryBackgroundColor = "#E4ECE9"
+textColor = "#1E2A2F"
+borderColor = "#CFDAD6"
+primaryColor = "#1D6A5E"
+linkColor = "#1D6A5E"
+
+[theme.dark]
+# Streamlit zawsze pisze biały tekst na przycisku głównym, a tym samym kolorem oznacza zaznaczoną zakładkę.
+# #2B8875 na #0F1416 daje 4,3:1 w obu miejscach – najlepszy możliwy kompromis dla jednego koloru akcentu.
+primaryColor = "#2B8875"
+backgroundColor = "#0F1416"
+secondaryBackgroundColor = "#1A2226"
+textColor = "#E4ECEA"
+borderColor = "#34433F"
+linkColor = "#86D0BF"
+codeBackgroundColor = "#1A2226"
+greenColor = "#5FB8A4"
+dataframeBorderColor = "#34433F"
+
+[theme.dark.sidebar]
+backgroundColor = "#151C1F"
+secondaryBackgroundColor = "#1F292D"
+textColor = "#E4ECEA"
+borderColor = "#34433F"
+primaryColor = "#2B8875"
+linkColor = "#86D0BF"
